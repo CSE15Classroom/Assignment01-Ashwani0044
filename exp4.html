@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Room Booking Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74b9ff, #a29bfe);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      background-color: #2d3436;
+      padding: 15px 0;
+      margin: 0;
+    }
+
+    form {
+      background-color: white;
+      width: 60%;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #2d3436;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #b2bec3;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    input[type="date"], input[type="number"] {
+      width: 50%;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #0984e3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #74b9ff;
+    }
+
+    .form-buttons {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Hotel Room Booking Form</h1>
+
+  <form action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="checkin">Check-In Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+
+    <label for="checkout">Check-Out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+    <label for="room">Room Type:</label>
+    <select id="room" name="room">
+      <option value="">-- Select Room Type --</option>
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="deluxe">Deluxe Room</option>
+      <option value="suite">Suite</option>
+    </select>
+
+    <label for="requests">Special Requests:</label>
+    <textarea id="requests" name="requests" placeholder="Any special requests or requirements..."></textarea>
+
+    <div class="form-buttons">
+      <button type="submit">Book Now</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+</body>
+</html>

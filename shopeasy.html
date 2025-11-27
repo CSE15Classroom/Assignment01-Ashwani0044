@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Easy</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+        section {
+            height: 600px;
+            width: 1400px;
+            margin-top: 50px;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;    
+        }
+        header {
+            height: 100px;
+            width: 1300px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+        .box {
+            height: 400px;
+            width: 400px;
+            border: 1px solid gray;border-radius: 10px;
+            margin-top: 30px;display:flex;align-items: center;flex-direction: column;
+            font-size: large;font-weight: 500;
+            text-align: left;
+        }
+        .img{
+            height: 200px;
+            width: 380px;
+            margin-top: 10px;border: 1px solid gray;
+            background-image: url("https://img.freepik.com/premium-photo/mockup-white-tshirt-isolated-yellow-background_917664-23812.jpg");
+            background-size: cover;background-position: center;background-repeat: no-repeat;
+        }
+        footer{
+            height: 50px;
+            width: 380px;
+            border: 1px solid gray;border-radius: 10px;
+            background-color: blue;color: white;
+            text-align: center;align-content: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>ShopEasy</h1>
+        </header>
+
+        <div class="box">
+            <div class="img"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">Classic Cotton T-Shirt</span>
+            <br><br>Soft, breathable cotton. Regular fit. Available<br><br>
+            <span style="color: green;">₹799</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+    </section>
+</body>
+
+</html>
