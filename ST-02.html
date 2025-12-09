@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Easy</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+        section {
+            height: 600px;
+            width: auto;
+            margin-top: 50px;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;    
+        }
+        header {
+            height: 100px;
+            width: 1300px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+        .bbox{
+            height: 400px;
+            width: 1300px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .box {
+            height: 400px;
+            width: 400px;
+            border: 1px solid rgb(44, 41, 41);border-radius: 10px;
+            margin-top: 30px;display:flex;align-items: center;flex-direction: column;
+            font-size: large;font-weight: 500;
+            text-align: left;
+            margin: 10px;
+        }
+        .img1,.img2,.img3{
+            height: 200px;
+            width: 380px;
+            margin-top: 10px;border: 1px solid gray;
+            background-size: cover;background-position: center;background-repeat: no-repeat;
+        }
+        .img1{
+            background-image: url("https://cdn.fcglcdn.com/brainbees/images/products/583x720/21164038a.webp");
+        }
+        .img2{
+           background-image: url("https://cdn.fcglcdn.com/brainbees/images/products/583x720/21164011a.webp");
+        }
+        .img3{
+            background-image: url("https://cdn.fcglcdn.com/brainbees/images/products/583x720/21164073a.webp");
+        }
+
+        footer{
+            height: 50px;
+            width: 380px;
+            border: 1px solid gray;border-radius: 10px;
+            background-color: blue;color: white;
+            text-align: center;align-content: center;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 460px){
+            section{
+                width: 100vw;
+                height: auto;
+                border: none;
+            }
+            header{
+                width: 95vw;
+                font-size: medium;
+            }
+            .bbox{
+                width: 90vw;
+                height: auto;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .box{
+                width: 98%; 
+                margin: 10px 0;
+            }
+            .img1,.img2,.img3{
+                width: 95%; 
+                height: 150px;
+            }  
+            footer{
+                width: 95%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>ShopEasy</h1>
+        </header>
+        <div class="bbox">
+        <div class="box">
+            <div class="img1"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">Classic Cotton T-Shirt(GREEN)</span>
+            <br><br>Soft, breathable cotton. Regular fit.<br><br>
+            <span style="color: green;">₹799</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+        <div class="box">
+            <div class="img2"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">Classic Cotton T-Shirt(YELLOW)</span>
+            <br><br>Soft, breathable cotton. Regular fit. <br><br>
+            <span style="color: green;">₹799</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+        <div class="box">
+            <div class="img3"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">Classic Cotton T-Shirt(RED)</span>
+            <br><br>Soft, breathable cotton. Regular fit.<br><br>
+            <span style="color: green;">₹799</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+    </div>
+    </section>
+</body>
+
+</html>
