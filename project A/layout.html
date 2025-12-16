@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        body{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+           background-color: green;
+        }
+        header, nav{
+            height: 50px;
+            width: auto;
+            margin: 20px;
+            background-color: lightgreen;
+        }
+        .outer{
+            height: 460px;
+            width: auto;
+            margin-left: 20px;margin-right: 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            justify-content: space-between;
+        }
+        .first{
+            height: 460px;
+            width: 900px;
+        }
+        .sec{
+            height: 460px;
+            width: 500px;
+            display: flex;flex-direction: column;
+        }
+        .f{
+            height: 310px;
+            width: 900px;
+            background-color: lightgreen;
+            display: flex;flex-direction: column;align-items: center;
+            justify-content: flex-end;
+
+        }
+        .s{
+            height: 130px;
+            width: 900px;
+            margin-top: 20px;
+            background-color: lightgreen;
+        }
+        .p{
+            height: 200px;
+            width: 500px;
+            display: flex;
+        }
+        .a,.b{
+            height: 200px;
+            width:240px;
+            background-color: lightgreen;
+        }
+        .b{
+            margin-left: 20px;
+        }
+        .c{
+            height: 240px;
+            width: 500px;
+            background-color: lightgreen;
+            margin-top: 20px;
+        }
+        .x{
+            height: 50px;
+            width: 820px;
+        }
+        .y{
+            height: 160px;
+            width: 820px; 
+        }
+        .x,.y{ 
+            margin-bottom: 15px;
+            background-color: rgb(240, 251, 233);
+        }
+        footer{
+            height: 80px;
+            width: auto;
+            background-color: lightgreen;
+            margin: 20px;
+        }
+        header,nav,.s,.a,.b,.c,.f,.x,.y,footer{
+            text-align: center;font-family: Arial, Helvetica, sans-serif;
+            align-content: center;font-weight: 600;
+        }
+        p{
+           margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Page header
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <div class="outer">
+        <div class="first">
+            <div class="f"><p>Article</p>
+                <div class="x">Article Header</div>
+                <div class="y">Main</div>
+            </div>
+            <div class="s">Section</div>
+        </div>
+        <div class="sec">
+            <div class="p">
+            <div class="a">Aside</div>
+            <div class="b">Aside</div></div>
+            <div class="c">Aside</div>
+        </div>
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
